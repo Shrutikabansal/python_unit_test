@@ -1,0 +1,11 @@
+How to run only single pytest in tox
+
+
+virtualenv venv
+(outside the repo)
+source venv/bin/activate (where 1st command is executed)
+pip install pytest (inside the repo)
+export PYTHONPATH=$PWD
+pytest -s -k test_pmd_rebal.py
+
+

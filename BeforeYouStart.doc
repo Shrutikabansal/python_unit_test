@@ -1,0 +1,15 @@
+Firstly install pytest :
+# pip install pytest
+Always start with “test_” all the test cases
+After writing the test file you have to execute the file 
+# python -m pytest
+It’ll execute all the test file in the sub directories too
+Use -v command for see the detailed information
+
+
+Suppose now you want to skip one test case for the moment then what  you can do is just skip using this just before the function
+
+@pytest.mark.skip(reason=” ”)
+and  to see what the reason to skip that function we use command
+# pytest -v -rxs
+
