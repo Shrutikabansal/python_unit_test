@@ -131,10 +131,10 @@ class TestCalcu_mult(unittest.TestCase):
 
 class TestCalcu_div(unittest.TestCase):
         def test_div_positive_input(self):
-                self.assertEqual(div(1,5),0)
+                self.assertEqual(int(div(1,5)),0)
                # print("test_mult_positive_input passed")
         def test_div_negative_input(self):
-                self.assertEqual(div(-1,-5),0)
+                self.assertEqual(int(div(-1,-5)),0)
                 #print("test_mult_positive_input passed")
      
         def test_div_float_input(self):
